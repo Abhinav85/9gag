@@ -11,13 +11,12 @@ const HttpClient = require('./httpclient');
 async function main() {
   const postCount = Number(process.argv[2]);
   const outputFolder = process.argv[3];
-  const section = process.argv[4];
+  const query = process.argv[4];
   const commentCount = Number(process.argv[5]);
-
   try {
     const httpClient = new HttpClient();
     await httpClient.init();
-    const scraper = new Scraper(httpClient, postCount, section, commentCount);
+    const scraper = new Scraper(httpClient, postCount, query, commentCount);
     const posts = await scraper.scrap();
     await httpClient.close();
     console.log(posts);
