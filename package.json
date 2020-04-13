@@ -1,5 +1,5 @@
 {
-  "name": "9gag",
+  "name": "9gagForked",
   "version": "3.2.1",
   "description": "Download 9GAG posts and comments",
   "main": "src/index.js",
@@ -17,16 +17,13 @@
     "offline",
     "cache"
   ],
-  "author": "Rui Almeida",
+  "author": "Abhinav ",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruial/9gag.git"
+    "url": "https://github.com/Abhinav85/9gag.git"
   },
-  "bugs": {
-    "url": "https://github.com/ruial/9gag/issues"
-  },
-  "homepage": "https://github.com/ruial/9gag",
+  "homepage": "https://github.com/Abhinav85/9gag.git",
   "dependencies": {
     "axios": "^0.19.2",
     "fs-extra": "^8.1.0",
@@ -37,6 +34,6 @@
     "chai": "^4.2.0",
     "eslint": "^5.7.0",
     "mocha": "^5.2.0"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
+  // "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
