@@ -14,11 +14,8 @@ async function main() {
   const query = process.argv[4];
   const commentCount = Number(process.argv[5]);
   try {
-    const httpClient = new HttpClient();
-    await httpClient.init();
-    const scraper = new Scraper(httpClient, postCount, query, commentCount);
+    const scraper = new Scraper(postCount, query, commentCount);
     const posts = await scraper.scrap();
-    await httpClient.close();
     console.log(posts);
 
     const downloader = new Downloader(outputFolder);
